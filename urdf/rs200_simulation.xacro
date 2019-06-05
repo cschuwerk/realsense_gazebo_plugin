@@ -9,7 +9,7 @@
     <!-- Import macro for realsense-RS200 camera-->
     <xacro:include filename="$(find realsense_gazebo_plugin)/urdf/realsense-RS200.macro.xacro"/>
     <!-- Create camera instance -->
-    <xacro:realsense-rs200 prefix="" parent="world">
-        <origin xyz="0 0 1.0" rpy="0 0 0" />   
+    <xacro:realsense-rs200 prefix="prefix_r200/camera" parent="world">
+        <origin xyz="0 0 1.0" rpy="0 0 0" />
     </xacro:realsense-rs200>
 </robot>
